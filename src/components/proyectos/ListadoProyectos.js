@@ -3,7 +3,9 @@ import Proyecto from './Proyecto';
 import proyectoContext from '../../context/proyectos/proyectoContext';
 
 const ListadoProyectos = () => {
-   //extraer proyectos de state inicial
+   
+   
+    //extraer proyectos de state inicial
     const proyectosContext = useContext(proyectoContext);
     const {proyectos, obtenerProyectos} = proyectosContext;
     //obtener proyectos cuando carga el componente
@@ -11,7 +13,7 @@ const ListadoProyectos = () => {
         obtenerProyectos()
     }, []);
     //revisar si proyectos tiene contenidos
-    if (proyectos.length === 0) return null;
+    if (proyectos.length === 0) return <p>No hay proyectos, comienza creando uno</p>;
     
    
 
