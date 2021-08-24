@@ -53,8 +53,7 @@ const NuevoProyecto = () => {
             >
                 Nuevo Proyecto
             </button>
-            {
-                formulario ? 
+            {   formulario ? 
                 (
                     <form
                     className="formulario-nuevo-proyecto"
