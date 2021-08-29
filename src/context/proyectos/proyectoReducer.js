@@ -5,7 +5,8 @@ import {FORMULARIO_PROYECTO,
         PROYECTO_ACTUAL,
         ELIMINAR_PROYECTO  } from '../../types'
 
-const proyectoReducer = (state, action) => {
+        /* eslint import/no-anonymous-default-export: [2, {"allowArrowFunction": true}] */
+export default (state, action) => {
     switch(action.type){
        case FORMULARIO_PROYECTO:
         return {
@@ -47,4 +48,3 @@ const proyectoReducer = (state, action) => {
     }
 }
 
-export default proyectoReducer;

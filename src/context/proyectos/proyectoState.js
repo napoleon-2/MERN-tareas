@@ -10,7 +10,7 @@ import {FORMULARIO_PROYECTO,
         ELIMINAR_PROYECTO } from '../../types'
 import { v4 as uuidv4 } from 'uuid';
 
-const ProyectoState = (props) => {
+const ProyectoState = props => {
     
     const proyectos = [
         { id: 1, nombre: 'Tienda Virtual'},

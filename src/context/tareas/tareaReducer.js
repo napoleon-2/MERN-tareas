@@ -8,8 +8,8 @@ import { TAREAS_PROYECTO,
          LIMPIAR_TAREA 
         } from '../../types';
 
-
-const tareaReducer = (state, action) => {
+/* eslint import/no-anonymous-default-export: [2, {"allowArrowFunction": true}] */
+export default (state, action) => {
     switch(action.type) {
         case TAREAS_PROYECTO:
             return {
@@ -53,4 +53,3 @@ const tareaReducer = (state, action) => {
             return state
     }
 }
-export default tareaReducer;
